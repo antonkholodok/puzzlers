@@ -14,7 +14,9 @@ public class SingleElementInSortedArrayUnitTest {
     public static Collection<Object> data() {
         return Arrays.asList(new Object[][] {
             { IntStream.of(1, 1, 2).toArray(), 2 },
-            { IntStream.of(1, 1, 2, 2, 4, 4, 5, 5, 9).toArray(), 9 }
+            { IntStream.of(1, 2, 2).toArray(), 1 },
+            { IntStream.of(1, 1, 2, 2, 4, 4, 5, 5, 9).toArray(), 9 },
+            { IntStream.of(1, 2, 2, 4, 4, 5, 5, 9, 9).toArray(), 1 }
         });
     }
 
